@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haven — Commercial Real Estate &amp; Office Leasing</title>
+  <meta name="description" content="Haven connects businesses with premium commercial real estate. Office space, business parks, and coworking across major metros.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%2358A6FF'/><text x='50' y='68' text-anchor='middle' font-size='52' font-weight='bold' font-family='sans-serif' fill='%230D1117'>H</text></svg>">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><span class="logo-mark">H</span> Haven</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+12125550180" class="header-phone">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +1 (212) 555 0180
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Tour</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="properties.html">Properties</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80" alt="Modern city skyline at night" loading="eager">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="hero-tag-dot"></span> 240+ Properties Available Now</div>
+        <h1 class="hero-title">Commercial space,<br><em>reimagined.</em></h1>
+        <p class="hero-description">Premium office buildings, business parks, and coworking spaces across 12 major metros. Data-driven leasing for modern businesses.</p>
+        <div class="hero-actions">
+          <a href="properties.html" class="btn btn-primary btn-lg">Browse Properties</a>
+          <a href="#calculator" class="btn btn-outline btn-lg">Calculate Space Cost</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-value">240<em>+</em></div>
+            <div class="hero-stat-label">Properties</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">2.4<em>M</em></div>
+            <div class="hero-stat-label">Sqft Available</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">12<em>+</em></div>
+            <div class="hero-stat-label">Metro Areas</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">850<em>+</em></div>
+            <div class="hero-stat-label">Corporate Tenants</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Office Space Calculator -->
+  <section class="section" id="calculator">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Space Calculator</span>
+        <h2 class="section-title">Price your <em>future office</em></h2>
+        <p class="section-subtitle">Get instant monthly estimates based on size, team, and lease length. Transparent pricing with zero commitment.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-form">
+          <div class="calc-field">
+            <label>Office Size <span class="calc-field-value" id="calcSqftVal">2,000 sqft</span></label>
+            <input type="range" class="calc-slider" id="calcSqft" min="500" max="15000" step="500" value="2000">
+          </div>
+          <div class="calc-field">
+            <label>Team Size <span class="calc-field-value" id="calcDesksVal">20 desks</span></label>
+            <input type="range" class="calc-slider" id="calcDesks" min="5" max="150" step="5" value="20">
+          </div>
+          <div class="calc-field">
+            <label>Lease Length <span class="calc-field-value" id="calcMonthsVal">12 months</span></label>
+            <input type="range" class="calc-slider" id="calcMonths" min="3" max="60" step="3" value="12">
+          </div>
+          <div style="padding-top:16px; border-top:1px solid var(--border); color:var(--text-3); font-size:.8125rem; line-height:1.7;">
+            Estimates include base rent, utilities, and tenant services. Final pricing subject to inspection and lease terms.
+          </div>
+        </div>
+        <div class="calc-results">
+          <div>
+            <div class="calc-results-label">Estimated Monthly</div>
+            <div class="calc-result-main">$<em id="calcTotal">10,200</em></div>
+            <div class="calc-result-period">All-inclusive · Billed monthly</div>
+          </div>
+          <div class="calc-breakdown">
+            <div class="calc-row"><span>Base Rent</span><span id="calcRentBase">$9,000</span></div>
+            <div class="calc-row"><span>Utilities &amp; Internet</span><span id="calcRentUtil">$1,300</span></div>
+            <div class="calc-row"><span>Tenant Services</span><span id="calcRentServ">$900</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-lg" style="width:100%;">Request Detailed Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Browser -->
+  <section class="section section-alt" id="floor-browser">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Live Availability</span>
+        <h2 class="section-title">Browse <em>floor by floor</em></h2>
+        <p class="section-subtitle">Real-time availability for One Manhattan Plaza. Navigate through floors to explore layouts and pricing.</p>
+      </div>
+
+      <div class="floor-browser">
+        <div class="floor-nav">
+          <div>
+            <div class="floor-title">One Manhattan Plaza</div>
+            <div style="color:var(--text-3); font-size:.875rem; margin-top:4px;">42 Wall Street, Financial District</div>
+          </div>
+          <div class="floor-controls">
+            <button class="floor-btn" id="floorDown" aria-label="Previous floor">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="floor-current" id="floorCurrent">F10</div>
+            <button class="floor-btn" id="floorUp" aria-label="Next floor">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="floor-layout">
+          <svg class="floor-plan-svg" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Floor outline -->
+            <rect x="30" y="30" width="440" height="340" rx="4" fill="#1A202E" stroke="#58A6FF" stroke-width="1.5" stroke-opacity=".4"/>
+            <!-- Core / elevators -->
+            <rect x="220" y="160" width="80" height="80" fill="#0D1117" stroke="#58A6FF" stroke-width="1" stroke-opacity=".3"/>
+            <text x="260" y="205" text-anchor="middle" font-size="10" fill="#58A6FF" opacity=".6">CORE</text>
+            <!-- Private offices -->
+            <rect x="50" y="50" width="140" height="90" fill="#58A6FF" fill-opacity=".15" stroke="#58A6FF" stroke-width="1"/>
+            <text x="120" y="100" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#F0F6FC">Exec Suite A</text>
+            <text x="120" y="115" text-anchor="middle" font-size="9" fill="#58A6FF">2,400 sqft</text>
+
+            <rect x="310" y="50" width="140" height="90" fill="#58A6FF" fill-opacity=".15" stroke="#58A6FF" stroke-width="1"/>
+            <text x="380" y="100" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#F0F6FC">Open Plan B</text>
+            <text x="380" y="115" text-anchor="middle" font-size="9" fill="#58A6FF">3,200 sqft</text>
+
+            <rect x="50" y="260" width="140" height="110" fill="#3FB950" fill-opacity=".1" stroke="#3FB950" stroke-width="1"/>
+            <text x="120" y="315" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#F0F6FC">Meeting Hub</text>
+            <text x="120" y="330" text-anchor="middle" font-size="9" fill="#3FB950">1,800 sqft</text>
+
+            <rect x="310" y="260" width="140" height="110" fill="#58A6FF" fill-opacity=".15" stroke="#58A6FF" stroke-width="1"/>
+            <text x="380" y="315" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#F0F6FC">Studio C</text>
+            <text x="380" y="330" text-anchor="middle" font-size="9" fill="#58A6FF">2,100 sqft</text>
+
+            <!-- Labels -->
+            <text x="250" y="20" text-anchor="middle" font-size="10" fill="#F0F6FC" opacity=".5">NORTH EXPOSURE</text>
+            <text x="20" y="200" text-anchor="middle" font-size="10" fill="#F0F6FC" opacity=".5" transform="rotate(-90 20 200)">WEST</text>
+            <text x="480" y="200" text-anchor="middle" font-size="10" fill="#F0F6FC" opacity=".5" transform="rotate(90 480 200)">EAST</text>
+          </svg>
+          <div class="floor-details">
+            <div class="floor-stat-grid">
+              <div class="floor-stat">
+                <div class="floor-stat-label">Status</div>
+                <div class="floor-stat-value success" id="floorAvail">Available</div>
+              </div>
+              <div class="floor-stat">
+                <div class="floor-stat-label">Price / sqft</div>
+                <div class="floor-stat-value blue" id="floorPrice">$46/sqft</div>
+              </div>
+              <div class="floor-stat">
+                <div class="floor-stat-label">Total Area</div>
+                <div class="floor-stat-value">9,500 sqft</div>
+              </div>
+              <div class="floor-stat">
+                <div class="floor-stat-label">Max Capacity</div>
+                <div class="floor-stat-value">95 desks</div>
+              </div>
+            </div>
+            <div style="background:var(--bg-3); border:1px solid var(--border); border-radius:var(--r-md); padding:20px;">
+              <div style="font-size:.75rem; text-transform:uppercase; letter-spacing:.1em; color:var(--text-3); margin-bottom:10px;">Floor Amenities</div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                <span style="padding:4px 10px; background:var(--bg-2); border:1px solid var(--border); border-radius:100px; font-size:.75rem; color:var(--text-2);">Private entrance</span>
+                <span style="padding:4px 10px; background:var(--bg-2); border:1px solid var(--border); border-radius:100px; font-size:.75rem; color:var(--text-2);">HVAC zones</span>
+                <span style="padding:4px 10px; background:var(--bg-2); border:1px solid var(--border); border-radius:100px; font-size:.75rem; color:var(--text-2);">Fibre gigabit</span>
+                <span style="padding:4px 10px; background:var(--bg-2); border:1px solid var(--border); border-radius:100px; font-size:.75rem; color:var(--text-2);">24/7 access</span>
+                <span style="padding:4px 10px; background:var(--bg-2); border:1px solid var(--border); border-radius:100px; font-size:.75rem; color:var(--text-2);">Executive lounge</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary btn-lg" style="width:100%;">Schedule a Viewing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Properties -->
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Featured Properties</span>
+        <h2 class="section-title">Premium <em>commercial spaces</em></h2>
+        <p class="section-subtitle">A curated portfolio of flagship office buildings across major metropolitan business districts.</p>
+      </div>
+
+      <div class="property-grid">
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="One Manhattan Plaza office tower" loading="lazy">
+            <span class="property-card-badge">Class A</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">Financial District · NYC</div>
+            <h3 class="property-card-title"><a href="property-single.html">One Manhattan Plaza</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">85K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">12</div><div class="property-card-stat-lbl">floors</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">850</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$46/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="The Quantum building modern lobby" loading="lazy">
+            <span class="property-card-badge">New</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">SoMa · San Francisco</div>
+            <h3 class="property-card-title"><a href="property-single.html">The Quantum</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">62K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">9</div><div class="property-card-stat-lbl">floors</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">620</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$58/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&q=80" alt="Riverside Business Park glass facade" loading="lazy">
+            <span class="property-card-badge">Campus</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">Mission Bay · SF</div>
+            <h3 class="property-card-title"><a href="property-single.html">Riverside Business Park</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">180K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">6</div><div class="property-card-stat-lbl">buildings</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">1.8K</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$38/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=800&q=80" alt="Hudson Yards tower exterior" loading="lazy">
+            <span class="property-card-badge">Class A</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">Hudson Yards · NYC</div>
+            <h3 class="property-card-title"><a href="property-single.html">The Hudson Collective</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">120K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">16</div><div class="property-card-stat-lbl">floors</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">1.2K</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$72/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80" alt="Workspace interior with exposed ceiling" loading="lazy">
+            <span class="property-card-badge">Coworking</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">Chicago Loop</div>
+            <h3 class="property-card-title"><a href="property-single.html">The Prairie Works</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">45K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">7</div><div class="property-card-stat-lbl">floors</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">450</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$32/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="property-card-img">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Modern corporate workspace" loading="lazy">
+            <span class="property-card-badge">Boutique</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-card-meta">Austin · Downtown</div>
+            <h3 class="property-card-title"><a href="property-single.html">Lone Star Tower</a></h3>
+            <div class="property-card-stats">
+              <div class="property-card-stat"><div class="property-card-stat-val">38K</div><div class="property-card-stat-lbl">sqft</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">8</div><div class="property-card-stat-lbl">floors</div></div>
+              <div class="property-card-stat"><div class="property-card-stat-val">380</div><div class="property-card-stat-lbl">desks</div></div>
+            </div>
+            <div class="property-card-footer">
+              <div>
+                <div class="property-card-price-lbl">FROM</div>
+                <div class="property-card-price">$34/sqft</div>
+              </div>
+              <a href="property-single.html" class="btn btn-outline btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:48px;">
+        <a href="properties.html" class="btn btn-outline btn-lg">View All 240 Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Band -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div><div class="stat-value" data-count="240" data-suffix="+">0</div><div class="stat-label">Properties</div></div>
+        <div><div class="stat-value" data-count="2.4" data-suffix="M">0</div><div class="stat-label">Sqft Available</div></div>
+        <div><div class="stat-value" data-count="850" data-suffix="+">0</div><div class="stat-label">Corporate Tenants</div></div>
+        <div><div class="stat-value" data-count="98" data-suffix="%">0</div><div class="stat-label">Occupancy Rate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lease Comparison Table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Lease Options</span>
+        <h2 class="section-title">Compare <em>lease structures</em></h2>
+        <p class="section-subtitle">Find the right lease for your business. From flexible monthly plans to long-term partnerships.</p>
+      </div>
+
+      <div class="lease-table-wrap">
+        <table class="lease-table">
+          <thead>
+            <tr>
+              <th>Lease Type</th>
+              <th>Term</th>
+              <th>Starting From</th>
+              <th>Deposit</th>
+              <th>Customisable</th>
+              <th>Break Clause</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="lease-plan-name">Flex</div><div class="lease-plan-desc">Month-to-month</div></td>
+              <td>1–6 months</td>
+              <td><div class="lease-price">$3,200</div></td>
+              <td>1 month</td>
+              <td><span class="lease-dash">—</span></td>
+              <td><span class="lease-check">✓</span></td>
+              <td><a href="contact.html" class="btn btn-outline btn-sm">Enquire</a></td>
+            </tr>
+            <tr class="lease-featured">
+              <td><div class="lease-plan-name">Standard</div><div class="lease-plan-desc">Most popular</div></td>
+              <td>12–24 months</td>
+              <td><div class="lease-price">$6,800</div></td>
+              <td>2 months</td>
+              <td><span class="lease-check">✓</span></td>
+              <td><span class="lease-check">✓</span></td>
+              <td><a href="contact.html" class="btn btn-primary btn-sm">Enquire</a></td>
+            </tr>
+            <tr>
+              <td><div class="lease-plan-name">Corporate</div><div class="lease-plan-desc">3–5 year term</div></td>
+              <td>36+ months</td>
+              <td><div class="lease-price">$12,400</div></td>
+              <td>3 months</td>
+              <td><span class="lease-check">✓</span></td>
+              <td><span class="lease-dash">—</span></td>
+              <td><a href="contact.html" class="btn btn-outline btn-sm">Enquire</a></td>
+            </tr>
+            <tr>
+              <td><div class="lease-plan-name">Enterprise</div><div class="lease-plan-desc">Whole-floor lease</div></td>
+              <td>Custom</td>
+              <td><div class="lease-price">Custom</div></td>
+              <td>Custom</td>
+              <td><span class="lease-check">✓</span></td>
+              <td><span class="lease-check">✓</span></td>
+              <td><a href="contact.html" class="btn btn-outline btn-sm">Enquire</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Tour -->
+  <section class="section section-alt" id="virtual-tour">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Virtual Tour</span>
+        <h2 class="section-title">Walk through <em>any space</em>, from anywhere</h2>
+        <p class="section-subtitle">Immersive 360° virtual tours of every available property. Experience the space before you book a viewing.</p>
+      </div>
+
+      <div class="tour-card">
+        <div class="tour-bg">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&q=80" alt="Modern office interior for virtual tour" loading="lazy">
+        </div>
+        <div class="tour-content">
+          <button class="tour-play" aria-label="Launch virtual tour">
+            <svg fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
+          <h3 style="font-family:var(--heading); font-size:1.875rem; margin-bottom:12px;">One Manhattan Plaza — Floor 10</h3>
+          <p style="color:rgba(255,255,255,.7); max-width:440px; margin:0 auto;">Take an immersive 360° tour of our most popular floor, featuring corner offices and panoramic city views.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label"><span class="section-label-dot"></span> Tenant Stories</span>
+        <h2 class="section-title">Trusted by <em>growing teams</em></h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-logo">◆ Nimbus Capital</div>
+          <p class="testimonial-text">"Haven found us the perfect flagship space within a month. The data transparency and virtual tours saved us weeks of site visits."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SC</div>
+            <div>
+              <div class="testimonial-name">Sarah Chen</div>
+              <div class="testimonial-role">COO, Nimbus Capital · 140 employees</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo">▲ Relay Robotics</div>
+          <p class="testimonial-text">"The calculator gave us honest pricing upfront. Our lease was 22% below comparable quotes from other brokers. Game changer."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Marcus Reyes</div>
+              <div class="testimonial-role">Founder, Relay Robotics · 65 employees</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo">⬢ Helix Analytics</div>
+          <p class="testimonial-text">"We've grown from 20 to 200 people at Haven properties. Scalable terms, no penalties, zero surprises. Exactly what we needed."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JL</div>
+            <div>
+              <div class="testimonial-name">Julia Lindqvist</div>
+              <div class="testimonial-role">CEO, Helix Analytics · 205 employees</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-mark">H</span> Haven</a>
+          <p class="footer-desc">Commercial real estate, reimagined. Premium office buildings, business parks, and coworking across 12 major metros.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Explore</h4><ul class="footer-links"><li><a href="properties.html">All Properties</a></li><li><a href="#calculator">Space Calculator</a></li><li><a href="#floor-browser">Floor Browser</a></li><li><a href="#virtual-tour">Virtual Tours</a></li></ul></div>
+        <div><h4 class="footer-heading">Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul></div>
+        <div><h4 class="footer-heading">Contact</h4><ul class="footer-links"><li>250 Park Avenue, 18F</li><li>New York, NY 10017</li><li><a href="tel:+12125550180">+1 (212) 555 0180</a></li><li><a href="mailto:hello@havencre.com">hello@havencre.com</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Haven Commercial Real Estate. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Licensing</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

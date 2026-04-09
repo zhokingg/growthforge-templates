@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Atlas is the modern real estate platform with advanced property search, real-time market data, mortgage tools, and trusted local agents across New Jersey, New York, Connecticut, and Pennsylvania.">
+<title>Atlas — Find Your Perfect Property</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-icon">A</span>Atlas</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="listings.html">Listings</a>
+      <a href="contact.html">Contact</a>
+      <a href="listings.html" class="btn btn-blue">Search Properties</a>
+    </div>
+    <div class="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><span class="hero-badge-dot"></span> 2,400+ active listings</div>
+        <h1>Find your next home with <span>confidence.</span></h1>
+        <p class="lead">Atlas connects buyers, sellers, and agents on one powerful platform. Advanced search, real-time market data, and trusted professionals in every neighbourhood.</p>
+        <div class="hero-cta">
+          <a href="listings.html" class="btn btn-blue btn-lg">Browse Listings</a>
+          <a href="#calculator" class="btn btn-outline btn-lg">Mortgage Calculator</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-avatars">
+            <span style="background:#2563EB">JK</span>
+            <span style="background:#059669">SL</span>
+            <span style="background:#9333EA">MR</span>
+            <span style="background:#D97706">AT</span>
+          </div>
+          <div class="hero-trust-text"><strong>12,000+</strong> families helped since 2014</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format" alt="Featured property"></div>
+          <div class="hero-card-body">
+            <div class="hero-card-price">$875,000</div>
+            <h3>Modern Colonial on Maple Drive</h3>
+            <div class="hero-card-loc">📍 142 Maple Dr, Westfield, NJ</div>
+            <div class="hero-card-meta"><span>🛏 4 Beds</span><span>🛁 3 Baths</span><span>📐 2,850 sqft</span></div>
+          </div>
+        </div>
+        <div class="hero-float f1">
+          <div class="hero-float-icon" style="background:var(--blue-light);color:var(--blue)">📊</div>
+          <div><div class="hero-float-label">Median price</div><div class="hero-float-val">$542k</div></div>
+        </div>
+        <div class="hero-float f2">
+          <div class="hero-float-label">Avg. days on market</div>
+          <div class="hero-float-val">24 days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<section class="search-section">
+  <div class="container">
+    <div class="search-bar">
+      <div class="search-field"><label>Location</label><input type="text" placeholder="City, ZIP, or neighbourhood..."></div>
+      <div class="search-field"><label>Property Type</label><select><option>Any Type</option><option>Single Family</option><option>Condo / Townhouse</option><option>Multi-Family</option><option>Land</option></select></div>
+      <div class="search-field"><label>Beds</label><select><option>Any</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select></div>
+      <div class="search-field"><label>Price Range</label><select><option>Any Price</option><option>$0 – $300k</option><option>$300k – $500k</option><option>$500k – $750k</option><option>$750k – $1M</option><option>$1M+</option></select></div>
+      <button class="btn btn-blue">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- MARKET STATS -->
+<section class="stats">
+  <div class="container stats-inner">
+    <div class="section-head">
+      <span class="section-label" style="color:#60A5FA">Market Dashboard</span>
+      <h2>Real-time market insights.</h2>
+      <p>Data updated daily from MLS feeds across all served regions. Know before you buy.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-card-num">$<span>542</span>k</div><div class="stat-card-label">Median sale price</div><div class="stat-card-change up">↑ 4.2% YoY</div></div>
+      <div class="stat-card"><div class="stat-card-num"><span>24</span></div><div class="stat-card-label">Avg. days on market</div><div class="stat-card-change up">↑ 3 days</div></div>
+      <div class="stat-card"><div class="stat-card-num"><span>2.4</span>k</div><div class="stat-card-label">Active listings</div><div class="stat-card-change down">↓ 8.1%</div></div>
+      <div class="stat-card"><div class="stat-card-num"><span>96</span>%</div><div class="stat-card-label">List-to-sale ratio</div><div class="stat-card-change up">↑ 1.3%</div></div>
+    </div>
+    <div class="chart-placeholder">
+      <div class="chart-bars">
+        <div class="chart-bar listed" style="height:60%"></div><div class="chart-bar sold" style="height:50%"></div>
+        <div class="chart-bar listed" style="height:75%"></div><div class="chart-bar sold" style="height:65%"></div>
+        <div class="chart-bar listed" style="height:85%"></div><div class="chart-bar sold" style="height:70%"></div>
+        <div class="chart-bar listed" style="height:70%"></div><div class="chart-bar sold" style="height:68%"></div>
+        <div class="chart-bar listed" style="height:90%"></div><div class="chart-bar sold" style="height:80%"></div>
+        <div class="chart-bar listed" style="height:95%"></div><div class="chart-bar sold" style="height:85%"></div>
+        <div class="chart-bar listed" style="height:80%"></div><div class="chart-bar sold" style="height:78%"></div>
+        <div class="chart-bar listed" style="height:100%"></div><div class="chart-bar sold" style="height:88%"></div>
+        <div class="chart-bar listed" style="height:85%"></div><div class="chart-bar sold" style="height:82%"></div>
+        <div class="chart-bar listed" style="height:70%"></div><div class="chart-bar sold" style="height:65%"></div>
+        <div class="chart-bar listed" style="height:60%"></div><div class="chart-bar sold" style="height:55%"></div>
+        <div class="chart-bar listed" style="height:75%"></div><div class="chart-bar sold" style="height:70%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;width:100%;max-width:520px;margin-top:8px;font-size:.7rem;color:rgba(255,255,255,.3)">
+        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+      </div>
+      <div class="chart-legend"><span class="l">Listed</span><span class="s">Sold</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED LISTINGS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Featured Properties</span>
+      <h2>Handpicked by our agents.</h2>
+      <p>Curated properties that meet our quality standards for location, value, and condition.</p>
+    </div>
+    <div class="listings-grid">
+      <a href="listing-single.html" class="listing-card">
+        <div class="listing-img"><span class="listing-tag new">New</span><span class="listing-fav">♡</span><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&auto=format"></div>
+        <div class="listing-body"><div class="listing-price">$875,000</div><h3>Modern Colonial</h3><div class="listing-loc">📍 142 Maple Dr, Westfield, NJ</div><div class="listing-meta"><span>🛏 <strong>4</strong> Beds</span><span>🛁 <strong>3</strong> Baths</span><span>📐 <strong>2,850</strong> sqft</span></div></div>
+      </a>
+      <a href="listing-single.html" class="listing-card">
+        <div class="listing-img"><span class="listing-tag sale">For Sale</span><span class="listing-fav">♡</span><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&auto=format"></div>
+        <div class="listing-body"><div class="listing-price">$1,250,000</div><h3>Luxury Townhouse</h3><div class="listing-loc">📍 88 Park Ave, Summit, NJ</div><div class="listing-meta"><span>🛏 <strong>5</strong> Beds</span><span>🛁 <strong>4</strong> Baths</span><span>📐 <strong>3,600</strong> sqft</span></div></div>
+      </a>
+      <a href="listing-single.html" class="listing-card">
+        <div class="listing-img"><span class="listing-tag sale">For Sale</span><span class="listing-fav">♡</span><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&auto=format"></div>
+        <div class="listing-body"><div class="listing-price">$625,000</div><h3>Contemporary Ranch</h3><div class="listing-loc">📍 31 Oak Lane, Madison, NJ</div><div class="listing-meta"><span>🛏 <strong>3</strong> Beds</span><span>🛁 <strong>2</strong> Baths</span><span>📐 <strong>2,100</strong> sqft</span></div></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="listings.html" class="btn btn-outline">View All Listings →</a></div>
+  </div>
+</section>
+
+<!-- NEIGHBOURHOOD COMPARE -->
+<section class="compare" style="background:var(--gray-50);border-top:1px solid var(--gray-200)">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Compare</span>
+      <h2>Neighbourhood comparison.</h2>
+      <p>Side-by-side data to help you choose the right area for your lifestyle and budget.</p>
+    </div>
+    <table class="compare-table">
+      <thead><tr><th>Neighbourhood</th><th>Median Price</th><th>Avg. $/sqft</th><th>Schools</th><th>Walk Score</th><th>Demand</th></tr></thead>
+      <tbody>
+        <tr><td class="area-name">Westfield</td><td>$875,000</td><td>$310</td><td>9/10</td><td><div class="compare-bar" style="width:100px"><div class="compare-bar-fill" style="width:72%"></div></div></td><td><span class="compare-badge high">High</span></td></tr>
+        <tr><td class="area-name">Summit</td><td>$1,050,000</td><td>$345</td><td>9/10</td><td><div class="compare-bar" style="width:100px"><div class="compare-bar-fill" style="width:68%"></div></div></td><td><span class="compare-badge high">High</span></td></tr>
+        <tr><td class="area-name">Madison</td><td>$685,000</td><td>$280</td><td>8/10</td><td><div class="compare-bar" style="width:100px"><div class="compare-bar-fill" style="width:78%"></div></div></td><td><span class="compare-badge mid">Medium</span></td></tr>
+        <tr><td class="area-name">Cranford</td><td>$620,000</td><td>$265</td><td>8/10</td><td><div class="compare-bar" style="width:100px"><div class="compare-bar-fill" style="width:82%"></div></div></td><td><span class="compare-badge mid">Medium</span></td></tr>
+        <tr><td class="area-name">Scotch Plains</td><td>$545,000</td><td>$230</td><td>7/10</td><td><div class="compare-bar" style="width:100px"><div class="compare-bar-fill" style="width:55%"></div></div></td><td><span class="compare-badge low">Low</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- AGENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Our Team</span>
+      <h2>Meet our top agents.</h2>
+      <p>Licensed professionals with deep local expertise, ready to guide you.</p>
+    </div>
+    <div class="agents-grid">
+      <div class="agent-card">
+        <div class="agent-photo"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format"></div>
+        <h3>Sarah Mitchell</h3><div class="agent-role">Senior Broker</div>
+        <div class="agent-stats"><div><div class="agent-stat-num">142</div><div class="agent-stat-label">Sales</div></div><div><div class="agent-stat-num">$86M</div><div class="agent-stat-label">Volume</div></div></div>
+        <div class="agent-contact"><a href="#">✉</a><a href="#">📞</a><a href="#">in</a></div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format"></div>
+        <h3>David Chen</h3><div class="agent-role">Buyer's Agent</div>
+        <div class="agent-stats"><div><div class="agent-stat-num">98</div><div class="agent-stat-label">Sales</div></div><div><div class="agent-stat-num">$54M</div><div class="agent-stat-label">Volume</div></div></div>
+        <div class="agent-contact"><a href="#">✉</a><a href="#">📞</a><a href="#">in</a></div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format"></div>
+        <h3>Maria Rodriguez</h3><div class="agent-role">Listing Specialist</div>
+        <div class="agent-stats"><div><div class="agent-stat-num">115</div><div class="agent-stat-label">Sales</div></div><div><div class="agent-stat-num">$72M</div><div class="agent-stat-label">Volume</div></div></div>
+        <div class="agent-contact"><a href="#">✉</a><a href="#">📞</a><a href="#">in</a></div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-photo"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&auto=format"></div>
+        <h3>James Walker</h3><div class="agent-role">Commercial</div>
+        <div class="agent-stats"><div><div class="agent-stat-num">67</div><div class="agent-stat-label">Sales</div></div><div><div class="agent-stat-num">$120M</div><div class="agent-stat-label">Volume</div></div></div>
+        <div class="agent-contact"><a href="#">✉</a><a href="#">📞</a><a href="#">in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORTGAGE CALCULATOR -->
+<section class="calc" id="calculator">
+  <div class="container">
+    <div class="calc-grid">
+      <div>
+        <span class="section-label">Tools</span>
+        <h2>Mortgage calculator.</h2>
+        <p style="color:var(--gray-500);margin:12px 0 24px;line-height:1.7">Estimate your monthly payment before you start shopping. Adjust loan amount, interest rate, and term to see what fits your budget.</p>
+        <div class="features-grid" style="grid-template-columns:1fr 1fr;gap:16px">
+          <div class="feature" style="padding:20px"><div class="feature-icon" style="width:36px;height:36px;font-size:1rem">💡</div><h3 style="font-size:1rem">Pre-qualification</h3><p style="font-size:.8rem">Get pre-qualified in minutes with our partner lenders.</p></div>
+          <div class="feature" style="padding:20px"><div class="feature-icon" style="width:36px;height:36px;font-size:1rem">📈</div><h3 style="font-size:1rem">Rate comparison</h3><p style="font-size:.8rem">Compare rates from 20+ lenders in one click.</p></div>
+        </div>
+      </div>
+      <div class="calc-form">
+        <label>Home Price ($)</label>
+        <input type="number" id="loanAmt" value="500000" step="10000">
+        <label>Down Payment ($)</label>
+        <input type="number" id="downPay" value="100000" step="5000">
+        <label>Interest Rate (%)</label>
+        <input type="number" id="intRate" value="6.5" step="0.1" min="0" max="20">
+        <label>Loan Term</label>
+        <select id="loanTerm"><option value="30">30 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select>
+        <button id="calcBtn" class="btn btn-blue" style="width:100%;margin-top:24px">Calculate Payment</button>
+        <div id="calcResult" class="calc-result">
+          <div class="calc-result-label">Estimated Monthly Payment</div>
+          <div class="calc-result-val" id="monthlyPay">$0</div>
+          <div class="calc-result-detail" id="calcDetail"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Reviews</span>
+      <h2>What our clients say.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>Atlas made our home search incredibly efficient. The market data and neighbourhood comparison tools helped us decide in days, not months.</p>
+        <div class="testi-author"><div class="testi-avatar">KP</div><div><div class="testi-name">Karen Phillips</div><div class="testi-role">First-time buyer, Westfield</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>Sarah Mitchell was phenomenal. She understood our needs immediately and found us a home below asking in a competitive market. Highly recommend Atlas.</p>
+        <div class="testi-author"><div class="testi-avatar">MT</div><div><div class="testi-name">Michael Torres</div><div class="testi-role">Seller, Summit</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>The mortgage calculator alone saved us from looking at homes we couldn't afford. Realistic, transparent, and professional from start to close.</p>
+        <div class="testi-author"><div class="testi-avatar">JL</div><div><div class="testi-name">Jessica Lee</div><div class="testi-role">Buyer, Madison</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <h2>Ready to make your move?</h2>
+        <p>Get matched with a local agent or start browsing listings today. No obligation, no pressure.</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn btn-blue">Get Started</button>
+        </div>
+      </div>
+      <div class="cta-stats">
+        <div class="cta-stat"><div class="cta-stat-num">2,400+</div><div class="cta-stat-label">Listings</div></div>
+        <div class="cta-stat"><div class="cta-stat-num">85+</div><div class="cta-stat-label">Agents</div></div>
+        <div class="cta-stat"><div class="cta-stat-num">12k+</div><div class="cta-stat-label">Families</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo" style="color:#fff"><span class="logo-icon">A</span>Atlas</a>
+        <p>The modern real estate platform connecting buyers, sellers, and agents with data-driven confidence.</p>
+      </div>
+      <div><h4>Properties</h4><ul><li><a href="listings.html">All Listings</a></li><li><a href="listings.html">For Sale</a></li><li><a href="listings.html">Recently Sold</a></li><li><a href="#">New Construction</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="#">Careers</a></li><li><a href="about.html">Our Agents</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="#">Mortgage Calculator</a></li><li><a href="#">Market Reports</a></li><li><a href="#">Buyer's Guide</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 Atlas Realty. All rights reserved.</div><div>Licensed in NJ, NY, CT, PA</div></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

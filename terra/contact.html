@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Terra</title>
+  <meta name="description" content="Arrange a private viewing, enquire about an estate, or join our waiting list. Terra Country Estates, Oxfordshire.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF6F1'/><circle cx='50' cy='50' r='38' fill='none' stroke='%238B6914' stroke-width='2'/><text x='50' y='63' text-anchor='middle' font-size='38' font-family='serif' font-style='italic' fill='%232C1810'>T</text></svg>">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><span class="logo-mark">T</span> Terra</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="estates.html">Estates</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-phone">+44 1865 555 0190</span>
+        <a href="contact.html" class="btn btn-primary btn-sm">Enquire</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="estates.html">Estates</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1506057213927-9615bcdfaf15?w=1920&q=80" alt="Burford Oxfordshire high street in summer" loading="eager">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Burford · Oxfordshire</div>
+        <h1 class="hero-title">Do come<br><em>and find us</em>.</h1>
+        <p class="hero-description">Arrange a private viewing, discuss what you're looking for, or simply call for a conversation about the market.</p>
+        <div class="hero-actions">
+          <a href="estates.html" class="btn btn-outline-cream btn-lg">Our Estates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" name="telephone">
+          </div>
+          <div class="form-group">
+            <label for="interest">Interest</label>
+            <select id="interest" name="interest">
+              <option>Buying an estate</option>
+              <option>Selling an estate</option>
+              <option>General enquiry</option>
+              <option>Valuation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="county">Preferred county</label>
+            <select id="county" name="county">
+              <option>Oxfordshire</option>
+              <option>The Cotswolds</option>
+              <option>Wiltshire</option>
+              <option>Suffolk</option>
+              <option>Devon</option>
+              <option>Kent</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget">
+              <option>Under £2M</option>
+              <option>£2M–£5M</option>
+              <option>£5M–£10M</option>
+              <option>£10M+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send Enquiry</button>
+        </form>
+
+        <div class="contact-side">
+          <h3 class="contact-side-title">Come to <em>the Old Rectory</em></h3>
+          <p class="contact-side-desc">Our office is a stone's throw from the church in Burford, in a seventeenth-century rectory with a garden of its own. Visitors are welcome by appointment — we will put the kettle on.</p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-label">our office</div>
+              <div class="contact-info-value">The Old Rectory,<br>Burford, Oxfordshire OX18</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">telephone</div>
+              <div class="contact-info-value">+44 1865 555 0190</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">email</div>
+              <div class="contact-info-value">enquiries@terra-estates.co.uk</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">opening hours</div>
+              <div class="contact-info-value">Mon—Fri · 9am to 6pm<br>Saturdays by appointment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-mark">T</span> Terra</a>
+          <p class="footer-desc">Country estates, farmhouses, and heritage properties across the English countryside. Established 1892.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
+            <a href="#" aria-label="Journal"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Estates</h4><ul class="footer-links"><li><a href="estates.html">All Estates</a></li><li><a href="index.html#heritage">Heritage Homes</a></li><li><a href="index.html#seasons">Country Year</a></li><li><a href="index.html#drone-tour">Drone Tours</a></li></ul></div>
+        <div><h4 class="footer-heading">Terra</h4><ul class="footer-links"><li><a href="about.html">Our Story</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Journal</a></li><li><a href="#">Newsletter</a></li></ul></div>
+        <div><h4 class="footer-heading">Visit us</h4><ul class="footer-links"><li>The Old Rectory</li><li>Burford, Oxfordshire OX18</li><li>+44 1865 555 0190</li><li><a href="mailto:enquiries@terra-estates.co.uk">enquiries@terra-estates.co.uk</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Terra Country Estates · Est. 1892</p>
+        <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pulse — Coworking That Moves At Your Speed</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>Pulse</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="spaces.html">Spaces</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Book a Tour</a>
+    </div>
+    <div class="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Live availability · 12 cities</span>
+        <h1>Work hard.<br>Play <span>harder.</span></h1>
+        <p class="lead">Pulse is the flexible workspace built for founders, freelancers and scaling teams. Hot desks to private floors — available by the hour, day or year.</p>
+        <div class="hero-cta">
+          <a href="spaces.html" class="btn btn-primary">Explore Spaces →</a>
+          <a href="#tour" class="btn btn-outline">Virtual Tour 360°</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num"><span>42</span>+</div><div class="stat-label">Locations worldwide</div></div>
+          <div><div class="stat-num"><span>18</span>k</div><div class="stat-label">Active members</div></div>
+          <div><div class="stat-num"><span>98</span>%</div><div class="stat-label">Member rating</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format" alt="Modern coworking space">
+        <div class="hero-badge b1">
+          <span class="hero-badge-dot"></span>
+          <div><div class="hero-badge-text">127 desks free</div><div class="hero-badge-sub">Available now</div></div>
+        </div>
+        <div class="hero-badge b2">
+          <div><div class="hero-badge-text">⚡ Fast Wi-Fi</div><div class="hero-badge-sub">1 Gbps fibre</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="checker">
+  <div class="container checker-inner">
+    <h2>Real-time <span>availability</span> checker</h2>
+    <p class="lead">Find an open desk, meeting room or private office in seconds. No calls, no forms, no waiting.</p>
+    <div class="check-box">
+      <div><label>Location</label>
+        <select><option>Brooklyn HQ</option><option>SoHo Studio</option><option>Austin East</option><option>Lisbon Beach</option></select>
+      </div>
+      <div><label>Type</label>
+        <select id="deskType"><option>hot desks</option><option>dedicated desks</option><option>private offices</option><option>meeting rooms</option></select>
+      </div>
+      <div><label>Date</label><input type="date" value="2026-04-08"></div>
+      <button id="checkBtn" class="btn btn-primary">Check now</button>
+    </div>
+    <div id="checkResult" class="check-result"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why Pulse</span>
+      <h2>Built for momentum.</h2>
+      <p>Everything you need to ship fast, grow faster and never run out of great coffee.</p>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">⚡</div><h3>1 Gbps Wi-Fi</h3><p>Enterprise fibre with wired backup at every desk. Zero buffer, zero excuses.</p></div>
+      <div class="feature"><div class="feature-icon">☕</div><h3>Unlimited Coffee Bar</h3><p>Barista-grade espresso, cold brew on tap, kombucha Fridays. Fuel included.</p></div>
+      <div class="feature"><div class="feature-icon">🎙️</div><h3>Podcast Studio</h3><p>Acoustically treated booths with pro mics, ready to book in two clicks.</p></div>
+      <div class="feature"><div class="feature-icon">🧘</div><h3>Wellness Room</h3><p>Yoga, meditation and nap pods for when the sprint gets heavy.</p></div>
+      <div class="feature"><div class="feature-icon">🚲</div><h3>Bike Storage + Showers</h3><p>Commute by pedal. Lockers, showers and drying rooms on every floor.</p></div>
+      <div class="feature"><div class="feature-icon">🌐</div><h3>Global Access</h3><p>Your membership unlocks every Pulse city. Work from Lisbon on Monday, NYC on Friday.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="plans">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Membership plans</span>
+      <h2>Pick your pace.</h2>
+      <p>From solo hustle to scaling team, there's a plan that flexes with you.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan">
+        <div class="plan-type">Hot Desk</div>
+        <h3>Flex</h3>
+        <div class="plan-price">$199<small>/mo</small></div>
+        <p class="plan-desc">Drop in anywhere, any Pulse.</p>
+        <ul><li>Any open desk</li><li>5 meeting hours</li><li>Global access</li><li>Community events</li></ul>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </div>
+      <div class="plan featured">
+        <div class="plan-badge">Popular</div>
+        <div class="plan-type">Dedicated</div>
+        <h3>Fixed</h3>
+        <div class="plan-price">$349<small>/mo</small></div>
+        <p class="plan-desc">Your own desk, 24/7.</p>
+        <ul><li>Reserved desk</li><li>20 meeting hours</li><li>Locker + mail</li><li>Guest passes</li></ul>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="plan">
+        <div class="plan-type">Private Office</div>
+        <h3>Studio</h3>
+        <div class="plan-price">$699<small>/mo</small></div>
+        <p class="plan-desc">Lockable room for 2–10.</p>
+        <ul><li>Private office</li><li>40 meeting hours</li><li>Custom branding</li><li>Priority support</li></ul>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </div>
+      <div class="plan">
+        <div class="plan-type">Enterprise</div>
+        <h3>Suite</h3>
+        <div class="plan-price">$1.2k<small>/mo+</small></div>
+        <p class="plan-desc">Full-floor, fully branded.</p>
+        <ul><li>Entire floor</li><li>Unlimited rooms</li><li>HR tools</li><li>Dedicated CSM</li></ul>
+        <a href="contact.html" class="btn btn-outline">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calc">
+  <div class="container calc-inner">
+    <div>
+      <span class="eyebrow">Team Size Calculator</span>
+      <h2>How big is your <span>crew?</span></h2>
+      <p>Slide to your team size and we'll recommend the perfect plan with transparent pricing. No sales call required.</p>
+      <a href="contact.html" class="btn btn-primary">Lock In This Plan →</a>
+    </div>
+    <div class="calc-widget">
+      <label>Team Size</label>
+      <div class="calc-value" id="teamVal">5</div>
+      <input type="range" min="1" max="25" value="5" class="calc-slider" id="teamSlider">
+      <div style="display:flex;justify-content:space-between;color:#a8a8c0;font-size:.85rem"><span>1</span><span>25+</span></div>
+      <div class="calc-rec">
+        <div class="calc-rec-label">Recommended Plan</div>
+        <div class="calc-rec-plan" id="recPlan">Private Office</div>
+        <div class="calc-rec-price" id="recPrice">$3,495 / month</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tour" id="tour">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Virtual Tour</span>
+      <h2>Step inside without stepping out.</h2>
+      <p>Explore every Pulse location in immersive 360°. See the vibe before you book.</p>
+    </div>
+    <div class="tour-visual">
+      <img src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?w=1600&auto=format" alt="360 tour">
+      <div class="tour-label">Brooklyn HQ</div>
+      <div class="tour-play"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Community Events</span>
+      <h2>More than a desk.</h2>
+      <p>Weekly demo nights, founder dinners, yoga flows, hackathons. You're never working alone.</p>
+    </div>
+    <div class="events-grid">
+      <div class="event">
+        <div class="event-date"><span class="event-day">12</span><span class="event-mo">Apr</span></div>
+        <span class="event-tag">Demo Night</span>
+        <h3 style="margin-top:10px">Founder Lightning Talks</h3>
+        <p class="event-meta">6:30 PM · Brooklyn HQ · Free</p>
+        <a href="#" class="btn btn-outline">RSVP →</a>
+      </div>
+      <div class="event">
+        <div class="event-date"><span class="event-day">18</span><span class="event-mo">Apr</span></div>
+        <span class="event-tag">Workshop</span>
+        <h3 style="margin-top:10px">AI for Product Teams</h3>
+        <p class="event-meta">10 AM · SoHo Studio · Members</p>
+        <a href="#" class="btn btn-outline">RSVP →</a>
+      </div>
+      <div class="event">
+        <div class="event-date"><span class="event-day">25</span><span class="event-mo">Apr</span></div>
+        <span class="event-tag">Social</span>
+        <h3 style="margin-top:10px">Rooftop DJ Session</h3>
+        <p class="event-meta">7 PM · Austin East · Open</p>
+        <a href="#" class="btn btn-outline">RSVP →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testi">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Member Stories</span>
+      <h2>Loved by makers.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card"><p>Moved our 6-person team here last year. The community alone closed two partnerships for us. Pulse is the unfair advantage.</p><div class="testi-author"><div class="testi-avatar">MK</div><div><div class="testi-name">Maya Kapoor</div><div class="testi-role">CEO, Riverline</div></div></div></div>
+      <div class="testi-card"><p>I've tried four coworking brands. Pulse is the only one where I actually wanted to be in the office. The energy is real.</p><div class="testi-author"><div class="testi-avatar">JT</div><div><div class="testi-name">Jordan Tate</div><div class="testi-role">Freelance Designer</div></div></div></div>
+      <div class="testi-card"><p>The 360 tours sold it for me without leaving my apartment. Signed up the same afternoon. Best productivity jump of my year.</p><div class="testi-author"><div class="testi-avatar">AL</div><div><div class="testi-name">Alex Luo</div><div class="testi-role">Founder, Tempofy</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Your new office is one click away.</h2>
+      <p>Book a free day pass. No commitment, no pitch. Just bring your laptop — we'll handle the rest.</p>
+      <a href="contact.html" class="btn btn-primary">Claim Your Free Day →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo" style="color:#fff"><span class="logo-dot"></span>Pulse</a>
+        <p>The flexible workspace built for founders, freelancers and scaling teams worldwide.</p>
+        <div class="foot-social"><a href="#">𝕏</a><a href="#">IG</a><a href="#">in</a><a href="#">TT</a></div>
+      </div>
+      <div><h4>Workspace</h4><ul><li><a href="spaces.html">Hot Desks</a></li><li><a href="spaces.html">Private Offices</a></li><li><a href="spaces.html">Meeting Rooms</a></li><li><a href="spaces.html">Enterprise</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Member Login</a></li><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>© 2026 Pulse Coworking. All rights reserved.</div><div>Built for the new way of work.</div></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
