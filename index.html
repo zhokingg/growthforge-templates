@@ -2,73 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="GrowthForge — 11 handcrafted HTML templates for real estate, SaaS, and creative professionals. Live previews, responsive design, production-ready code.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GrowthForge — Premium HTML Templates</title>
+<meta name="description" content="10 handcrafted HTML templates for real estate, SaaS, and creative professionals. Production-ready, responsive, zero dependencies.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0A0A0F;--surface:#111118;--border:#1E1E2A;--text:#E4E4E7;--muted:#71717A;--white:#FAFAFA;--blue:#3B82F6;--blue-glow:rgba(59,130,246,.15)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fff;--bg2:#fafafa;--bg3:#f5f5f5;
+  --text:#0a0a0a;--text2:#666;--text3:#999;
+  --border:#eaeaea;--border2:#e5e5e5;
+  --radius:8px;--radius-lg:12px;
+  --font:'Inter',system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.4,0,.2,1);
+  --max:1200px
+}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.5;font-size:15px}
 a{color:inherit;text-decoration:none}
 
 /* Nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:20px 0;background:rgba(10,10,15,.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:1.1rem;color:var(--white);display:flex;align-items:center;gap:10px}
-.logo-mark{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:var(--white)}
-.nav-meta{font-size:.8rem;color:var(--muted)}
-.nav-meta strong{color:var(--blue)}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-weight:600;font-size:14px;letter-spacing:-.02em;display:flex;align-items:center;gap:6px}
+.nav-logo svg{width:20px;height:20px}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-size:13px;color:var(--text2);transition:color .15s}.nav-links a:hover{color:var(--text)}
+.nav-cta{font-size:13px;font-weight:500;color:var(--bg);background:var(--text);padding:6px 14px;border-radius:6px;transition:opacity .15s}.nav-cta:hover{opacity:.85}
 
 /* Hero */
-.hero{padding:160px 0 80px;text-align:center}
-.container{max-width:1200px;margin:0 auto;padding:0 32px}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid var(--border);border-radius:999px;font-size:.75rem;font-weight:600;color:var(--muted);margin-bottom:24px;background:var(--surface)}
-.badge-dot{width:6px;height:6px;background:var(--blue);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:-.03em;max-width:720px;margin:0 auto}
-h1 span{background:linear-gradient(135deg,var(--blue),#818CF8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.subtitle{font-size:1.15rem;color:var(--muted);margin:20px auto 0;max-width:560px;line-height:1.7}
-.stats-row{display:flex;justify-content:center;gap:48px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
-.stat-val{font-size:1.75rem;font-weight:800;color:var(--white)}
-.stat-val em{font-style:normal;color:var(--blue)}
-.stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.hero{max-width:var(--max);margin:0 auto;padding:80px 24px 64px;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--border);border-radius:100px;font-size:12px;color:var(--text2);margin-bottom:20px}
+.hero-badge span{width:6px;height:6px;border-radius:50%;background:#22c55e}
+.hero h1{font-size:clamp(32px,5vw,52px);font-weight:600;letter-spacing:-.035em;line-height:1.1;color:var(--text);max-width:640px;margin:0 auto}
+.hero p{font-size:16px;color:var(--text2);max-width:480px;margin:16px auto 0;line-height:1.6;font-weight:400}
+.hero-stats{display:flex;justify-content:center;gap:40px;margin-top:40px}
+.hero-stat{text-align:center}
+.hero-stat strong{font-size:24px;font-weight:600;letter-spacing:-.03em;display:block;color:var(--text)}
+.hero-stat span{font-size:12px;color:var(--text3);margin-top:2px;display:block}
+
+/* Filters */
+.filters-bar{max-width:var(--max);margin:0 auto;padding:0 24px 32px;display:flex;gap:6px}
+.filters-bar button{padding:6px 14px;border-radius:100px;border:1px solid var(--border);background:var(--bg);color:var(--text2);font-family:var(--font);font-size:13px;cursor:pointer;transition:all .15s}
+.filters-bar button:hover{border-color:var(--text3);color:var(--text)}
+.filters-bar button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 
 /* Grid */
-.grid-section{padding:40px 0 120px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:all .35s;position:relative}
-.card:hover{border-color:var(--blue);transform:translateY(-6px);box-shadow:0 20px 60px -12px rgba(59,130,246,.2)}
-.card-img{aspect-ratio:16/10;background:linear-gradient(135deg,#1a1a2e,#16213e);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.card-img-inner{width:85%;height:80%;border-radius:6px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.4);position:relative}
-.card-preview{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 8s linear}
-.card:hover .card-preview{transform:translateY(-30%)}
-.card-num{position:absolute;top:12px;left:12px;width:28px;height:28px;background:rgba(255,255,255,.08);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:var(--muted)}
-.card-body{padding:20px 24px 24px}
-.card-tags{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.tag{padding:3px 10px;border-radius:6px;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-.tag-niche{background:var(--blue-glow);color:var(--blue)}
-.tag-style{background:rgba(255,255,255,.06);color:var(--muted)}
-.card-body h2{font-size:1.25rem;font-weight:700;color:var(--white);margin-bottom:4px}
-.card-sub{font-size:.85rem;color:var(--muted);margin-bottom:16px}
-.card-link{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;color:var(--blue);transition:gap .2s}
-.card:hover .card-link{gap:10px}
-.card-pages{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);padding:4px 10px;border-radius:6px;font-size:.65rem;font-weight:600;color:var(--muted)}
+.grid-wrap{max-width:var(--max);margin:0 auto;padding:0 24px 80px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .3s var(--ease),transform .3s var(--ease);display:block;background:var(--bg)}
+.card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-2px)}
+.card:hover .card-img{transform:scale(1.015)}
+
+.card-img-wrap{aspect-ratio:16/10;overflow:hidden;background:var(--bg3);position:relative}
+.card-img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s var(--ease)}
+.card-style{position:absolute;top:10px;left:10px;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:500;letter-spacing:.02em;background:var(--bg);border:1px solid var(--border);color:var(--text2)}
+
+.card-body{padding:16px 18px}
+.card-body h3{font-size:15px;font-weight:600;letter-spacing:-.01em}
+.card-sub{font-size:13px;color:var(--text2);margin-top:2px}
+.card-tags{display:flex;gap:4px;margin-top:10px;flex-wrap:wrap}
+.card-tags span{padding:2px 8px;border-radius:4px;font-size:11px;background:var(--bg3);color:var(--text2)}
+.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.card-pages{font-size:12px;color:var(--text3)}
+.card-link{font-size:12px;font-weight:500;color:var(--text);display:flex;align-items:center;gap:4px;transition:gap .2s}
+.card:hover .card-link{gap:6px}
+.card-link svg{width:12px;height:12px}
+
+/* Featured */
+.card-feat{grid-column:1/-1}
+.card-feat .card-img-wrap{aspect-ratio:2.3/1}
+
+/* Included section */
+.included{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.included-inner{max-width:var(--max);margin:0 auto;padding:64px 24px}
+.included h2{font-size:20px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.included>div>p{font-size:14px;color:var(--text2);margin-bottom:36px}
+.inc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.inc-card{padding:20px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg)}
+.inc-card h4{font-size:13px;font-weight:600;margin-bottom:4px}
+.inc-card p{font-size:12px;color:var(--text2);line-height:1.5}
+
+/* CTA */
+.cta{max-width:var(--max);margin:0 auto;padding:80px 24px;text-align:center}
+.cta h2{font-size:28px;font-weight:600;letter-spacing:-.03em}
+.cta p{font-size:15px;color:var(--text2);margin:12px auto 28px;max-width:400px}
+.cta-btn{display:inline-flex;padding:10px 24px;background:var(--text);color:var(--bg);border-radius:8px;font-size:14px;font-weight:500;transition:opacity .15s}.cta-btn:hover{opacity:.85}
 
 /* Footer */
-footer{border-top:1px solid var(--border);padding:40px 0;text-align:center}
-footer p{font-size:.8rem;color:var(--muted)}
-footer a{color:var(--blue)}
+.foot{max-width:var(--max);margin:0 auto;padding:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:12px;color:var(--text3)}
+.foot a{color:var(--text2);transition:color .15s}.foot a:hover{color:var(--text)}
+.foot-r{display:flex;gap:16px}
 
-@media(max-width:900px){
+/* Responsive */
+@media(max-width:768px){
   .grid{grid-template-columns:1fr}
-  .stats-row{gap:24px;flex-wrap:wrap}
-  .hero{padding:120px 0 60px}
+  .card-feat .card-img-wrap{aspect-ratio:16/10}
+  .inc-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-stats{flex-wrap:wrap;gap:24px}
+  .nav-links a:not(.nav-cta){display:none}
+  .foot{flex-direction:column;gap:8px;align-items:center}
 }
-@media(min-width:900px) and (max-width:1100px){
-  .grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:480px){
+  .inc-grid{grid-template-columns:1fr}
+  .hero-stats{flex-direction:column;gap:16px}
 }
 </style>
 </head>
@@ -76,192 +115,210 @@ footer a{color:var(--blue)}
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo"><span class="logo-mark">GF</span>GrowthForge</div>
-    <div class="nav-meta"><strong>11</strong> templates &middot; <strong>55</strong> pages &middot; Production-ready</div>
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 20 20" fill="none"><rect width="20" height="20" rx="5" fill="#0a0a0a"/><path d="M6 14V6h2.5l2.5 3.5L13.5 6H16v8h-2v-4.5L11.5 13h-.5L8 9.5V14H6z" fill="#fff"/></svg>
+      GrowthForge
+    </a>
+    <div class="nav-links">
+      <a href="#templates">Templates</a>
+      <a href="#features">Features</a>
+      <a href="mailto:zeezfit@gmail.com" class="nav-cta">Contact</a>
+    </div>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="container">
-    <div class="badge"><span class="badge-dot"></span> Portfolio &middot; Live Previews</div>
-    <h1>Premium HTML <span>Templates</span></h1>
-    <p class="subtitle">11 handcrafted templates for real estate, SaaS, and creative professionals. Responsive, accessible, production-ready.</p>
-    <div class="stats-row">
-      <div><div class="stat-val"><em>11</em></div><div class="stat-label">Templates</div></div>
-      <div><div class="stat-val"><em>55</em></div><div class="stat-label">Pages</div></div>
-      <div><div class="stat-val"><em>5</em></div><div class="stat-label">Niches</div></div>
-      <div><div class="stat-val"><em>100</em>%</div><div class="stat-label">Responsive</div></div>
+  <div class="hero-badge"><span></span>10 templates available</div>
+  <h1>Premium HTML templates, built to convert</h1>
+  <p>Production-ready templates for real estate, SaaS, and creative brands. Responsive, semantic, zero dependencies.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>10</strong><span>Templates</span></div>
+    <div class="hero-stat"><strong>50+</strong><span>Pages</span></div>
+    <div class="hero-stat"><strong>0</strong><span>Dependencies</span></div>
+    <div class="hero-stat"><strong>100%</strong><span>Responsive</span></div>
+  </div>
+</section>
+
+<div class="filters-bar" id="templates">
+  <button class="on" onclick="f('all',this)">All</button>
+  <button onclick="f('re',this)">Real Estate</button>
+  <button onclick="f('saas',this)">SaaS</button>
+  <button onclick="f('other',this)">Other</button>
+</div>
+
+<div class="grid-wrap">
+<div class="grid" id="g">
+
+  <a href="atlas/index.html" class="card card-feat" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="atlas/assets/images/hero-property.jpg" alt="Atlas" onerror="this.style.display='none'">
+      <div class="card-style">Light Corporate</div>
+    </div>
+    <div class="card-body">
+      <h3>Atlas</h3>
+      <div class="card-sub">Multi-Listing Real Estate Agency</div>
+      <div class="card-tags"><span>Search filters</span><span>Market stats</span><span>Mortgage calc</span><span>Agent directory</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="crest/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="crest/assets/images/hero-bg.jpg" alt="Crest" onerror="this.style.display='none'">
+      <div class="card-style">Dark Premium</div>
+    </div>
+    <div class="card-body">
+      <h3>Crest</h3>
+      <div class="card-sub">Ultra-Luxury Penthouse & High-Rise</div>
+      <div class="card-tags"><span>View simulator</span><span>Price chart</span><span>Concierge</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="solara/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="solara/assets/images/hero-bg.jpg" alt="Solara" onerror="this.style.display='none'">
+      <div class="card-style">Bold Warm</div>
+    </div>
+    <div class="card-body">
+      <h3>Solara</h3>
+      <div class="card-sub">Mediterranean Luxury Villas & Resort</div>
+      <div class="card-tags"><span>Villa map</span><span>Availability</span><span>Concierge booking</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="nordic/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="nordic/assets/images/hero-apartment.jpg" alt="Nordic" onerror="this.style.display='none'">
+      <div class="card-style">Light Minimal</div>
+    </div>
+    <div class="card-body">
+      <h3>Nordic</h3>
+      <div class="card-sub">Scandinavian Minimalist Apartments</div>
+      <div class="card-tags"><span>Comparison tool</span><span>Walkability</span><span>Light calculator</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="haven/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="haven/assets/images/hero-bg.jpg" alt="Haven" onerror="this.style.display='none'">
+      <div class="card-style">Dark Premium</div>
+    </div>
+    <div class="card-body">
+      <h3>Haven</h3>
+      <div class="card-sub">Commercial Property & Office Space</div>
+      <div class="card-tags"><span>Space calculator</span><span>Floor browser</span><span>Lease table</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="terra/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="terra/assets/images/hero-bg.jpg" alt="Terra" onerror="this.style.display='none'">
+      <div class="card-style">Editorial Warm</div>
+    </div>
+    <div class="card-body">
+      <h3>Terra</h3>
+      <div class="card-sub">English Country Estates & Heritage</div>
+      <div class="card-tags"><span>Estate map</span><span>Land calculator</span><span>Seasonal calendar</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="pulse/index.html" class="card" data-c="other" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="pulse/assets/images/hero-space.jpg" alt="Pulse" onerror="this.style.display='none'">
+      <div class="card-style">Bold Energetic</div>
+    </div>
+    <div class="card-body">
+      <h3>Pulse</h3>
+      <div class="card-sub">Modern Coworking & Flexible Office</div>
+      <div class="card-tags"><span>Availability checker</span><span>Pricing tiers</span><span>Team calculator</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="estato/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="estato/assets/images/hero-bg.jpg" alt="Estato" onerror="this.style.display='none'">
+      <div class="card-style">Dark Luxury</div>
+    </div>
+    <div class="card-body">
+      <h3>Estato</h3>
+      <div class="card-sub">Premium Real Estate Agency</div>
+      <div class="card-tags"><span>Property showcase</span><span>Agent profiles</span><span>Listings</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="verdana/index.html" class="card" data-c="re" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="verdana/assets/images/hero-apartment.jpg" alt="Verdana" onerror="this.style.display='none'">
+      <div class="card-style">Light Minimal</div>
+    </div>
+    <div class="card-body">
+      <h3>Verdana</h3>
+      <div class="card-sub">Modern Urban Apartments</div>
+      <div class="card-tags"><span>Floor plan</span><span>Unit selector</span><span>Pricing table</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+  <a href="nexus/index.html" class="card" data-c="saas" target="_blank">
+    <div class="card-img-wrap">
+      <img class="card-img" src="nexus/assets/images/hero-dashboard.jpg" alt="Nexus" onerror="this.style.display='none'">
+      <div class="card-style">Dark Tech</div>
+    </div>
+    <div class="card-body">
+      <h3>Nexus</h3>
+      <div class="card-sub">AI / SaaS Product Platform</div>
+      <div class="card-tags"><span>Pricing toggle</span><span>Feature demo</span><span>Integrations</span></div>
+      <div class="card-bottom"><span class="card-pages">5 pages</span><span class="card-link">Live preview <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h7v7M13 3L6 10"/></svg></span></div>
+    </div>
+  </a>
+
+</div>
+</div>
+
+<section class="included" id="features">
+  <div class="included-inner">
+    <h2>What's in every template</h2>
+    <p>Production-grade code with zero shortcuts.</p>
+    <div class="inc-grid">
+      <div class="inc-card"><h4>Responsive</h4><p>Fluid layouts tested at every breakpoint from 320px to 2560px.</p></div>
+      <div class="inc-card"><h4>Vanilla JS</h4><p>No jQuery, no React, no build step. Works everywhere out of the box.</p></div>
+      <div class="inc-card"><h4>SEO ready</h4><p>Semantic HTML5, meta tags, Open Graph, structured heading hierarchy.</p></div>
+      <div class="inc-card"><h4>Cross-browser</h4><p>Tested on Chrome, Firefox, Safari, and Edge. No polyfills needed.</p></div>
+      <div class="inc-card"><h4>W3C valid</h4><p>Zero errors, zero warnings. Clean, standards-compliant markup.</p></div>
+      <div class="inc-card"><h4>Google Fonts</h4><p>Curated font pairings matched to each template's personality.</p></div>
+      <div class="inc-card"><h4>Interactive</h4><p>Calculators, comparison tools, sliders, and maps. Real functionality.</p></div>
+      <div class="inc-card"><h4>5 pages each</h4><p>Home, about, listings, single property, and contact. Complete sites.</p></div>
     </div>
   </div>
 </section>
 
-<section class="grid-section">
-  <div class="container">
-    <div class="grid">
-
-      <a href="estato/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">01</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#1a1a2e,#2d2b55)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Luxury Real Estate</span><span class="tag tag-style">Dark Luxury</span></div>
-          <h2>Estato</h2>
-          <div class="card-sub">High-end property showcase with gold accents and cinematic imagery</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="crest/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">02</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#0c0c1d,#1a1a3e)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Ultra-Luxury Penthouses</span><span class="tag tag-style">Dark Premium</span></div>
-          <h2>Crest</h2>
-          <div class="card-sub">Ultra-luxury penthouses and high-rise residences with platinum accents</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="solara/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">03</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#f5f0eb,#e8ddd0)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Mediterranean Villas</span><span class="tag tag-style">Light Warm</span></div>
-          <h2>Solara</h2>
-          <div class="card-sub">Mediterranean luxury villas and resort properties with terracotta tones</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="terra/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">04</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#f7f5f2,#e6e0d8)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Country Estates</span><span class="tag tag-style">Organic Warm</span></div>
-          <h2>Terra</h2>
-          <div class="card-sub">Country estates and rural properties with earthy, natural aesthetics</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="verdana/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">05</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#0a1628,#162d50)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Modern Urban Living</span><span class="tag tag-style">Dark Tech</span></div>
-          <h2>Verdana</h2>
-          <div class="card-sub">Smart urban apartments and modern city living with green accents</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="nordic/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">06</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#fafafa,#f0f0f0)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Minimalist Apartments</span><span class="tag tag-style">Light Minimal</span></div>
-          <h2>Nordic</h2>
-          <div class="card-sub">Scandinavian-inspired minimalist apartments and lofts</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="haven/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">07</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#f8f9fa,#e9ecef)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Commercial Real Estate</span><span class="tag tag-style">Light Corporate</span></div>
-          <h2>Haven</h2>
-          <div class="card-sub">Commercial real estate and office leasing platform</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="pulse/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">08</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#ffffff,#ffe5eb)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Coworking &amp; Flex Office</span><span class="tag tag-style">Bold Energetic</span></div>
-          <h2>Pulse</h2>
-          <div class="card-sub">Modern coworking and flexible office spaces with bold pink accents</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="maison/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">09</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#f8f5f0,#e8ddd0)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">French Luxury Property</span><span class="tag tag-style">Editorial Elegant</span></div>
-          <h2>Maison</h2>
-          <div class="card-sub">Parisian luxury real estate — ch&acirc;teaux, Haussmann, C&ocirc;te d'Azur villas</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="atlas/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">10</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#eff6ff,#dbeafe)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">Multi-Listing Agency</span><span class="tag tag-style">Light Corporate</span></div>
-          <h2>Atlas</h2>
-          <div class="card-sub">Professional MLS platform with advanced search, market stats, and agent directory</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-      <a href="nexus/index.html" class="card">
-        <div class="card-img">
-          <span class="card-num">11</span>
-          <span class="card-pages">5 pages</span>
-          <div class="card-img-inner" style="background:linear-gradient(135deg,#0f0f1a,#1a1a2e)"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag tag-niche">AI / SaaS Platform</span><span class="tag tag-style">Dark Tech</span></div>
-          <h2>Nexus</h2>
-          <div class="card-sub">AI-powered SaaS platform with neon accents and futuristic design</div>
-          <span class="card-link">Live Preview &rarr;</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
+<section class="cta">
+  <h2>Interested in working together?</h2>
+  <p>Custom templates, licensing, or wholesale — let's talk.</p>
+  <a href="mailto:zeezfit@gmail.com" class="cta-btn">Get in touch</a>
 </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2026 <a href="#">GrowthForge</a>. All templates are production-ready and fully responsive.</p>
+<footer class="foot">
+  <span>&copy; 2026 GrowthForge</span>
+  <div class="foot-r">
+    <a href="mailto:zeezfit@gmail.com">Email</a>
+    <a href="https://github.com/zhokingg" target="_blank">GitHub</a>
   </div>
 </footer>
 
+<script>
+function f(c,b){
+  document.querySelectorAll('.filters-bar button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  document.querySelectorAll('.card').forEach(x=>{x.style.display=c==='all'||x.dataset.c===c?'':'none'});
+}
+</script>
 </body>
 </html>
